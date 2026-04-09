@@ -5,5 +5,208 @@
     "options": [2, 3, 4, 5],
     "answer": 4,
     "difficulty": "easy"
+  },
+  {
+    "category": "Math",
+    "question": "What is 12 * 11?",
+    "options": [121, 132, 144, 112],
+    "answer": 132,
+    "difficulty": "easy"
+  },
+  {
+    "category": "Math",
+    "question": "What is the square root of 144?",
+    "options": [10, 11, 12, 14],
+    "answer": 12,
+    "difficulty": "easy"
+  },
+  {
+    "category": "Math",
+    "question": "Solve for x: 2x + 5 = 13.",
+    "options": [3, 4, 5, 6],
+    "answer": 4,
+    "difficulty": "easy"
+  },
+  {
+    "category": "Math",
+    "question": "What is 15% of 200?",
+    "options": [20, 25, 30, 35],
+    "answer": 30,
+    "difficulty": "medium"
+  },
+  {
+    "category": "Math",
+    "question": "What is 7 squared plus 3 cubed?",
+    "options": [76, 58, 82, 49],
+    "answer": 76,
+    "difficulty": "medium"
+  },
+  {
+    "category": "Math",
+    "question": "If a triangle has angles 90 and 45 degrees, what is the third angle?",
+    "options": [35, 45, 55, 90],
+    "answer": 45,
+    "difficulty": "medium"
+  },
+  {
+    "category": "Math",
+    "question": "What is the value of Pi to two decimal places?",
+    "options": [3.12, 3.14, 3.16, 3.18],
+    "answer": 3.14,
+    "difficulty": "medium"
+  },
+  {
+    "category": "Math",
+    "question": "What is the derivative of x^2?",
+    "options": ["x", "2x", "2", "x^3"],
+    "answer": "2x",
+    "difficulty": "hard"
+  },
+  {
+    "category": "Math",
+    "question": "What is log10(1000)?",
+    "options": [1, 2, 3, 4],
+    "answer": 3,
+    "difficulty": "hard"
+  },
+  {
+    "category": "Culture",
+    "question": "Who painted the 'Mona Lisa'?",
+    "options": ["Van Gogh", "Picasso", "Da Vinci", "Monet"],
+    "answer": "Da Vinci",
+    "difficulty": "easy"
+  },
+  {
+    "category": "Culture",
+    "question": "Which city is known as the 'Eternal City'?",
+    "options": ["Paris", "Rome", "Athens", "London"],
+    "answer": "Rome",
+    "difficulty": "easy"
+  },
+  {
+    "category": "Culture",
+    "question": "What is the capital of France?",
+    "options": ["Lyon", "Marseille", "Paris", "Nice"],
+    "answer": "Paris",
+    "difficulty": "easy"
+  },
+  {
+    "category": "Culture",
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "options": ["Dickens", "Shakespeare", "Hemingway", "Twain"],
+    "answer": "Shakespeare",
+    "difficulty": "easy"
+  },
+  {
+    "category": "Culture",
+    "question": "In which country did Origami originate?",
+    "options": ["China", "Japan", "Korea", "Thailand"],
+    "answer": "Japan",
+    "difficulty": "medium"
+  },
+  {
+    "category": "Culture",
+    "question": "Which musical period does Mozart belong to?",
+    "options": ["Baroque", "Classical", "Romantic", "Modern"],
+    "answer": "Classical",
+    "difficulty": "medium"
+  },
+  {
+    "category": "Culture",
+    "question": "What is the largest festival in Munich?",
+    "options": ["Tomorrowland", "Oktoberfest", "Coachella", "Carnival"],
+    "answer": "Oktoberfest",
+    "difficulty": "medium"
+  },
+  {
+    "category": "Culture",
+    "question": "Who is the Norse god of thunder?",
+    "options": ["Odin", "Loki", "Thor", "Freya"],
+    "answer": "Thor",
+    "difficulty": "medium"
+  },
+  {
+    "category": "Culture",
+    "question": "In which year did the French Revolution start?",
+    "options": [1776, 1789, 1812, 1848],
+    "answer": 1789,
+    "difficulty": "hard"
+  },
+  {
+    "category": "Culture",
+    "question": "Who composed the opera 'The Magic Flute'?",
+    "options": ["Beethoven", "Bach", "Mozart", "Wagner"],
+    "answer": "Mozart",
+    "difficulty": "hard"
+  },
+  {
+    "category": "Animals",
+    "question": "Which is the largest land animal?",
+    "options": ["Hippo", "Elephant", "Giraffe", "Rhino"],
+    "answer": "Elephant",
+    "difficulty": "easy"
+  },
+  {
+    "category": "Animals",
+    "question": "What do you call a baby cat?",
+    "options": ["Puppy", "Kitten", "Calf", "Cub"],
+    "answer": "Kitten",
+    "difficulty": "easy"
+  },
+  {
+    "category": "Animals",
+    "question": "How many legs does a spider have?",
+    "options": [6, 8, 10, 12],
+    "answer": 8,
+    "difficulty": "easy"
+  },
+  {
+    "category": "Animals",
+    "question": "Which bird is known for being able to mimic human speech?",
+    "options": ["Eagle", "Parrot", "Owl", "Penguin"],
+    "answer": "Parrot",
+    "difficulty": "easy"
+  },
+  {
+    "category": "Animals",
+    "question": "Which mammal is capable of true flight?",
+    "options": ["Flying Squirrel", "Bat", "Sugar Glider", "Ostrich"],
+    "answer": "Bat",
+    "difficulty": "medium"
+  },
+  {
+    "category": "Animals",
+    "question": "What is a group of lions called?",
+    "options": ["Pack", "Herd", "Pride", "Flock"],
+    "answer": "Pride",
+    "difficulty": "medium"
+  },
+  {
+    "category": "Animals",
+    "question": "Which animal has the longest neck?",
+    "options": ["Ostrich", "Giraffe", "Emu", "Camel"],
+    "answer": "Giraffe",
+    "difficulty": "medium"
+  },
+  {
+    "category": "Animals",
+    "question": "Where do kangaroos naturally live?",
+    "options": ["Africa", "Australia", "South America", "Asia"],
+    "answer": "Australia",
+    "difficulty": "medium"
+  },
+  {
+    "category": "Animals",
+    "question": "What is the scientific name for the domestic dog?",
+    "options": ["Felis catus", "Canis lupus familiaris", "Ursus arctos", "Equus ferus"],
+    "answer": "Canis lupus familiaris",
+    "difficulty": "hard"
+  },
+  {
+    "category": "Animals",
+    "question": "Which animal has the highest blood pressure?",
+    "options": ["Elephant", "Blue Whale", "Giraffe", "Lion"],
+    "answer": "Giraffe",
+    "difficulty": "hard"
   }
 ]
