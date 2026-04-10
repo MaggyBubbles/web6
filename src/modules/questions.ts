@@ -33,7 +33,7 @@ export function sortByDifficulty(array: any[])
       'hard': 3
     }
 
-    array = array.sort((a, b) => (sortByDifficulty[a.difficulty]-sortByDifficulty[b.difficulty]));
+    array.sort((a, b) => (sortByDifficulty[a.difficulty]-sortByDifficulty[b.difficulty])); //inplace sortierung; ändert ursprungsarray
     return array;
 
 }

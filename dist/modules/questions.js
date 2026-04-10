@@ -19,7 +19,7 @@ export function sortByDifficulty(array) {
         'medium': 2,
         'hard': 3
     };
-    array = array.sort((a, b) => (sortByDifficulty[a.difficulty] - sortByDifficulty[b.difficulty]));
+    array.sort((a, b) => (sortByDifficulty[a.difficulty] - sortByDifficulty[b.difficulty])); //inplace sortierung; ändert ursprungsarray
     return array;
 }
 //Funktion erstellt ein Array mit 5 Fragen
