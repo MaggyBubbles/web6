@@ -1,8 +1,5 @@
-import { fetchQuestions } from './questions.js';
 //Funktion, um die Frage auszugeben (noch nicht implementiert, nur ein bisschen rum gespielt mit let date = fetchQuestion)
 export function displayQuestion(index) {
-    let data = fetchQuestions();
-    console.log(data);
 }
 function handleAnswer(index, selectedOption) {
     //hier kommt rein, was mit der Antwort passiert

@@ -1,5 +1,3 @@
-//Funktion, die den Score ausrechnen soll
-//Derweil noch unfertig: wahrscheinlich so: array mit gesammelten Punkten kommt rein, addiert alles und git den Wert zurück
 export interface Answer{
     answer : number | string,
     correctAnswer : number | string,
@@ -13,29 +11,40 @@ export interface PlayerPerformanceData{
     playerPercentage: number;
 }
 
-export function savePerformanceData(data: PlayerPerformanceData){
-    let performanceData = JSON.stringify(data);
+//Daten werden im localStorage im Browser gespeichert
+export async function savePerformanceData(data: PlayerPerformanceData){
+    //fs.writeFileSync('.\.\leaderboard.json', performanceData);
+    let performanceData = data;
+    let leaderboard = JSON.parse(localStorage.getItem('leaderboard') || '[]');
+    if(!leaderboard)
+        {
+            const response = await fetch('./leaderboard.json');
+            leaderboard = await response.json();
+        }
+    leaderboard.push(performanceData);
+    localStorage.setItem('leaderboard', JSON.stringify(leaderboard));
+    console.log('Daten wurdem im Leaderboard gespeichert');
 }
 
-export async function fetchLeaderboard(): Promise<PlayerPerformanceData[]> {
-    const response = await fetch('./leaderboard.json');
-    const data = await response.json();
-    return data;
+//Daten werden aus dem localStorage vom Browser geholt und von höchster Punktezahl bis niedrigster Punktezahl sortiert
+//getestet funktioniert
+export function fetchLeaderboard(): PlayerPerformanceData[] {
+  const storedData = localStorage.getItem('leaderboard');
+  const data: PlayerPerformanceData[] = JSON.parse(storedData || '[]');
+  data.sort((a, b) =>b.playerScore-a.playerScore);
+  return data;
 }
 
+//Das LeaderBoard wird nach eingegebenen Namen gefiltert und nur passende Ergebisse in absteigender Reihenfolge nach Punktezahl ausgegeben
+//getestet funktioniert
 export function myLeaderBoard(name: string, array: PlayerPerformanceData[]){
-    let myLeaderBoard: any[] = [];
-    array.forEach(element => {
-        if(name === element.playerName){ myLeaderBoard.push(element);}
-    });
+    console.log("Anzahl Einträge gesamt:", array.length)
+    const myLeaderBoard = array.filter(player => player.playerName === name);
+    myLeaderBoard.sort((a, b) => b.playerScore - a.playerScore);
     return myLeaderBoard;
 }
 
-function sortDescending(array: any[]): any[]{
-    array.sort((a, b) => b - a); //inplace sortierung; ändert ursprungsarray
-    return array;
-}
-
+//getestet funktioniert
 export function calculateScore(answers : Answer[]) : number{
       
     let points : number = 0;
@@ -51,6 +60,7 @@ export function calculateScore(answers : Answer[]) : number{
     return points;
 }
 
+//getestet - funktioniert
 export function calculatePercentage(answers : Answer[]) : number{
 let percentage: number = 0;
 let count: number = answers.length;

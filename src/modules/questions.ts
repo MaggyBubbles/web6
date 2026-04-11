@@ -1,3 +1,5 @@
+import { PlayerPerformanceData } from "./scoring";
+
 //erstellt das Interface Question
 export interface Question {
   category: string;
@@ -13,6 +15,7 @@ export async function fetchQuestions(): Promise<Question[]> {
   const data = await response.json();
   return data;
 }
+
 
 //Funktion, die ein Array mischt
 export function shuffleArray(array: any[]): any[] {
