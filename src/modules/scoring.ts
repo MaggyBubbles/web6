@@ -13,7 +13,6 @@ export interface PlayerPerformanceData{
 
 //Daten werden im localStorage im Browser gespeichert
 export async function savePerformanceData(data: PlayerPerformanceData){
-    //fs.writeFileSync('.\.\leaderboard.json', performanceData);
     let performanceData = data;
     let leaderboard = JSON.parse(localStorage.getItem('leaderboard') || '[]');
     if(!leaderboard)
