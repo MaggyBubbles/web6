@@ -20,9 +20,6 @@ export async function fetchQuestions(): Promise<Question[]> {
 //Funktion, die ein Array mischt
 export function shuffleArray(array: any[]): any[] {
     array.sort(() => Math.random() - 0.5);
-    //Math.random() liefert einen Wert zwischen 0 und 1 zurück
-    //-0.5 macht das Ergebnis positiv oder negativ
-    //sortFunktion: ändert cards(keine Kopie), negativer Wert: A vor B eingefügt und andersrum
   return array;
 }
 
