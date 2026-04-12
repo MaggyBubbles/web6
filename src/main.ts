@@ -1,9 +1,13 @@
 import { distributeQuestions, fetchQuestions, Question, shuffleArray} from "./modules/questions.js";
-import { Answer, calculatePercentage, calculateScore, fetchLeaderboard, myLeaderBoard, PlayerPerformanceData, savePerformanceData} from "./modules/scoring.js";
+import { Answer, calculatePercentage, calculateScore, PlayerPerformanceData, savePerformanceData} from "./modules/scoring.js";
+import { fetchLeaderboard, myLeaderBoard } from "./modules/ui.js";
+import { startQuiz } from "./modules/ui.js";
 
 
+startQuiz();
 
 
+/* Test
 //Alles was hier steht sind Tests, um die Funktionalität zu überprüfen. Kann alles Auskommentiert werden!
 //await wird hier gebraucht, weil data sonst eventuell leer ist, da die Daten von fetchQuestion noch nicht geladen sind.
 let data = await fetchQuestions();
@@ -28,6 +32,7 @@ currentQuestions.forEach(element => {
     console.log(element.category, element.question, element.answer);
     console.log(element.difficulty);
 });
+
 
 const quiz = document.getElementById('quiz-container');
 currentQuestions.forEach(element => {
@@ -98,4 +103,4 @@ myBoard.forEach(element => {
     console.log('Player Score: ' + element.playerScore);
 });
 
-
+*/

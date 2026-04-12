@@ -25,24 +25,6 @@ export async function savePerformanceData(data: PlayerPerformanceData){
     console.log('Daten wurdem im Leaderboard gespeichert');
 }
 
-//Daten werden aus dem localStorage vom Browser geholt und von höchster Punktezahl bis niedrigster Punktezahl sortiert
-//getestet funktioniert
-export function fetchLeaderboard(): PlayerPerformanceData[] {
-  const storedData = localStorage.getItem('leaderboard');
-  const data: PlayerPerformanceData[] = JSON.parse(storedData || '[]');
-  data.sort((a, b) =>b.playerScore-a.playerScore);
-  return data;
-}
-
-//Das LeaderBoard wird nach eingegebenen Namen gefiltert und nur passende Ergebisse in absteigender Reihenfolge nach Punktezahl ausgegeben
-//getestet funktioniert
-export function myLeaderBoard(name: string, array: PlayerPerformanceData[]){
-    console.log("Anzahl Einträge gesamt:", array.length)
-    const myLeaderBoard = array.filter(player => player.playerName === name);
-    myLeaderBoard.sort((a, b) => b.playerScore - a.playerScore);
-    return myLeaderBoard;
-}
-
 //getestet funktioniert
 export function calculateScore(answers : Answer[]) : number{
       
